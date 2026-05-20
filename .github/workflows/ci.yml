@@ -27,7 +27,8 @@ on:
           context: ./frontend  
           push: true 
           tags: ${{ vars.DOCKERHUB_USERNAME }}/skillpulse-ka-frontend:latest
-                                                                                                    - name: Push Backend
+
+      - name: Push Backend
         uses: docker/build-push-action@v6
         with:
           context: ./backend 
