@@ -6,6 +6,7 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+
     steps: 
                                                                                                         - name: Checkout Code
          uses: actions/checout@v4
@@ -23,7 +24,7 @@ jobs:
          with:
           context: ./frontend
           push: true
-            tags: | 
+          tags: | 
               ${{ vars.DOCKERHUB_USERNAME }}/skillpulse-ka-frontend:latest
 
        - name: Push Backend
