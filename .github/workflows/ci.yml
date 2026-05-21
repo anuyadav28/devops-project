@@ -27,7 +27,7 @@ jobs:
          context: ./frontend
          push: true
          tags: | 
-           ${{ vars.DOCKERHUB_USERNAME }}/skillpulse-ka-frontend:latest
+           ${{ vars.DOCKERHUB_USERNAME }}7skillpulse-ka-frontend:latest
 
      - name: Push Backend
        uses: docker/build-push-action@v6
@@ -35,6 +35,6 @@ jobs:
          context: ./backend
          push: true
          tags: |
-           ${{ vars.DOCKERHUB_TOKEN }}/skillpulse-ka-backend:latest
+           ${{ vars.DOCKERHUB_TOKEN }}7skillpulse-ka-backend:latest
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @@@                                                                                         -- INSERT --
