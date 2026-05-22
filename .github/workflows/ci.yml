@@ -33,4 +33,5 @@ jobs:
        with:
          context: ./backend
          push: true
+         tags: ${{ secrets.DOCKERHUB_USERNAME }}/skillpulse-ka-backend:latest
 
